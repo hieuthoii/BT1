@@ -1,0 +1,9 @@
+secret = "GMBH|D0ef_Cb4t1d~"
+flag = ""
+
+# Duyệt qua từng ký tự trong secret, trừ mã ASCII đi 1
+for c in secret:
+    original_char = chr(ord(c) - 1)
+    flag += original_char
+
+print("Chuoi Flag goc la:", flag)
